@@ -3,7 +3,6 @@ trigger AccountHelper on Account (before insert) {
         for (Account accobj : Acc_List) {
             if (accobj.rating!='hot') {
                 accobj.industry='Banking';
-            }
+            } 
         }
     }
-}
